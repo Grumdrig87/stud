@@ -771,6 +771,10 @@ input {
 
 /* ---UNIQ---- */
 
+.uniq {
+	position: relative;
+	z-index: 4;
+}
 .uniq__card {
 	-webkit-border-radius: 8px;
 	   -moz-border-radius: 8px;
@@ -825,9 +829,64 @@ input {
 .uniq__img {
 	padding: 7px 9px;
 	background: #fff;
+	position: relative;
 	-webkit-border-radius: 8px;
 	   -moz-border-radius: 8px;
 	        border-radius: 8px;
+}
+.uniq__r:after,
+.uniq__r::before,
+.uniq__img:after,
+.uniq__img::before {
+	content: '';
+	display: block;
+	-webkit-box-shadow: 8px 0 25px rgba(255, 101, 24, 0.15);
+	   -moz-box-shadow: 8px 0 25px rgba(255, 101, 24, 0.15);
+	        box-shadow: 8px 0 25px rgba(255, 101, 24, 0.15);
+	-webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+	        border-radius: 8px;
+	position: absolute;
+}
+.uniq__r:after {
+	width: 103px;
+	height: 103px;
+	bottom: 17px;
+	left: 63px;
+	background: #fff url('../img/svg/achievement.svg') no-repeat center center;
+}
+.uniq__r::before {
+	width: 79px;
+	height: 79px;
+	top: -38px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	background: #fff url('../img/svg/contract.svg') no-repeat center center;
+}
+.uniq__img:after {
+	width: 65px;
+	height: 65px;
+	-webkit-transform: rotateZ(-20deg);
+	   -moz-transform: rotateZ(-20deg);
+	    -ms-transform: rotate(-20deg);
+	     -o-transform: rotateZ(-20deg);
+	        transform: rotateZ(-20deg);
+	top: 66px;
+	right: -88px;
+	background: #fff url('../img/svg/like.svg') no-repeat center center;
+}
+.uniq__img::before {
+	width: 84px;
+	height: 84px;
+	-webkit-transform: rotateZ(15deg);
+	   -moz-transform: rotateZ(15deg);
+	    -ms-transform: rotate(15deg);
+	     -o-transform: rotateZ(15deg);
+	        transform: rotateZ(15deg);
+	top: 103px;
+	left: -107px;
+	background: #fff url('../img/svg/pie-chart.svg') no-repeat center center;
 }
 .uniq__img img {
 	display: block;
@@ -894,6 +953,7 @@ input {
 	font-size: 11px;
 	font-weight: 600;
 	color: #5e5e5e;
+	margin-bottom: 8px;
 }
 .uniq__item {
 	display: -webkit-box;
@@ -907,6 +967,9 @@ input {
 	   -moz-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+}
+.uniq__item:nth-child(1) {
+	margin-right: 6px;
 }
 .uniq__item-num {
 	-webkit-border-radius: 50%;
@@ -932,7 +995,13 @@ input {
 	margin-right: 4px;
 	font-size: 13px;
 	font-weight: 600;
+	width: 26px;
+	height: 26px;
 }
 .uniq__item span {
 	font-size: 11px;
+	max-width: 53px;
+	display: block;
+	width: 60%;
+	line-height: 0.9em;
 }
