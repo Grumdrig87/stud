@@ -4,11 +4,13 @@ jQuery(document).ready(function($) {
     $('[data-cont]').appendTo('[data-nav]');
     $('[data-btns]').appendTo('[data-nav]');
     $('[data-main]').appendTo('.main__l');
-    $('.vac__item p').after('<div class="vac-mob"></div>');
-    $('.vac__item').each(function(){
-      $(this).find('.vac__city');
+    $('[data-vac] p').after('<div class="vac-mob" data-vacmob></div>');
+    $('[data-vac]').each(function(){
+      $(this).find('[data-city]').appendTo($(this).find('[data-vacmob]'));
+      $(this).find('[data-comp]').appendTo($(this).find('[data-vacmob]'));
     })
-  }
+    
+    }
  
   //tabs
 //   $('[data-can]').on('click', function() {
@@ -24,7 +26,15 @@ jQuery(document).ready(function($) {
             infinite: false,
             slidesToShow: 1
         });
-    }
+    };
+    if (jQuery('[data-info]').length > 0) {
+      $('[data-info]').slick({
+          dots: true,
+          speed: 300,
+          infinite: false,
+          slidesToShow: 1
+      });
+  }
   }
   // faq
 //   if (jQuery('[data-faq]').length > 0) {
