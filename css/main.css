@@ -2527,3 +2527,97 @@ input {
 .vac__sum svg {
 	margin-left: 5px;
 }
+
+.soisk-info__wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.soisk-info__wrap .vac__comp {
+	max-width: 70%;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+}
+.soisk-info__wrap .vac__comp svg {
+	margin-top: 3px;
+}
+.soisk-info__wrap .news-info__date {
+	white-space: nowrap;
+}
+.soisk-info__card {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	border: 5px solid #fff9f3;
+	padding: 29px 88px 25px 29px;
+	position: relative;
+	margin-bottom: 28px;
+}
+.soisk-info__card .vac__izbr {
+	padding: 5px 6px 6px;
+	top: 29px;
+	right: 26px;
+}
+.news-info__text p strong {
+	font-weight: 600px;
+	color: #ff6518;
+}
+
+
+/* ----CONTACTS---- */
+
+.contacts__wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 18px;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.contacts__wrap .header__contacts {
+	margin-left: 0;
+}
+.contacts__wrap .footer__soc span {
+	color: #300204;
+	margin-right: 8px;
+}
+.contacts__wrap .footer__soc .footer__soc-item:not(:last-child) {
+	margin-right: 8px;
+}

@@ -36,6 +36,14 @@ jQuery(document).ready(function($) {
       });
   }
   }
+  if (jQuery('[data-part]').length > 0) {
+    $('[data-part]').slick({
+        dots: true,
+        speed: 300,
+        infinite: true,
+        slidesToShow: 3
+    });
+};
   // faq
 //   if (jQuery('[data-faq]').length > 0) {
 //       $('[data-faq]').click(function() {
