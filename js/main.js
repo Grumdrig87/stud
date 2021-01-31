@@ -61,14 +61,14 @@ jQuery(document).ready(function($) {
 
     $( "#slider-range" ).slider({
       range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
+      min: 14,
+      max: 99,
+      values: [ 14, 99 ],
       slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        $( ".ui-slider-handle:nth-child(2)" ).html(ui.values[ 0 ]);
+        $( ".ui-slider-handle:nth-child(3)" ).html(ui.values[ 1 ]);
       }
     });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-
+    $( ".ui-slider-handle:nth-child(2)" ).html( $( "#slider-range" ).slider( "values", 0 ));
+    $( ".ui-slider-handle:nth-child(3)" ).html($( "#slider-range" ).slider( "values", 1 ));
 });

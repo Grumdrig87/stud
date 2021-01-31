@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<title>Опора студента</title>
+	<meta name="keywords" content="Опора студента" />
+    <meta name="description" content="Опора студента">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+	<!-- OG Tags -->
+	<meta property="og:title" content="Опора студента" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:site_name" content="Опора студента">
+    <meta property="og:description" content="Опора студента" />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="black-scr" data-blkscr></div>
+    <div class="wrap">
+        <header class="header header__page">
+            <div class="container">
+                <div class="header__top">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                    <div class="header__contacts" data-cont>
+                        <div class="header__cont-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" height='29' width='29' viewBox="0 90 612 612"><path fill="#ff8045" d="M306 90C137 90 0 227 0 396s137 306 306 306 306-137 306-306S475 90 306 90zm137.9 170l-138 109.1L163.4 260h280.5zm14.2 272H149.2V306.1l142.4 108c3.8 2.9 9.5 4.4 14 4.4 4.7 0 8.7-1.5 12.6-4.6l139.9-111.3V532z"/></svg>
+                            <div class="header__cont-wrap">
+                                почта для связи
+                                <a href="mailto:Student@opora.su" class="header__cont-link">
+                                    Student@opora.su
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__cont-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" height='28' width='28' viewBox="0 90 612 612"><path fill="#ff8045" d="M522.3 179.6c-119.5-119.5-313.2-119.5-432.7.1s-119.5 313.3.1 432.7 313.3 119.5 432.7-.1c57.4-57.4 89.6-135.2 89.6-216.4 0-81.1-32.3-158.9-89.7-216.3zm-58.9 336.7h0l-15.5 15.3c-20.1 20.3-49.3 28.7-77 22-28-7.5-54.5-19.4-78.7-35.3-22.5-14.4-43.3-31.2-62.1-50.1-17.3-17.2-32.9-36-46.4-56.3-14.8-21.8-26.6-45.6-34.9-70.6-9.5-29.4-1.6-61.7 20.4-83.3l18.2-18.2c5-5.1 13.3-5.1 18.3 0l57.3 57.3c5.1 5 5.1 13.3 0 18.3l-33.7 33.7c-9.7 9.6-10.9 24.7-2.9 35.7 12.2 16.7 25.6 32.4 40.3 47 16.3 16.4 34.1 31.3 53 44.6 11 7.6 25.8 6.4 35.3-3.1l32.5-33c5-5.1 13.3-5.1 18.3 0l57.4 57.5c5.3 5.2 5.3 13.4.2 18.5z"/></svg>
+                            <div class="header__cont-wrap">
+                                телефон
+                                <a href="tel:88005556635" class="header__cont-link">
+                                    8 (800) 555 66 35
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__btns" data-btns>
+                        <a href="#" class="btn header__obj">
+                            <svg xmlns="http://www.w3.org/2000/svg" height='20' width='20' viewBox="0 90 612 612"  fill="#fff"><path d="M306 90C137.3 90 0 227.3 0 396s137.3 306 306 306 306-137.3 306-306S474.7 90 306 90zm0 568.3C161.4 658.3 43.7 540.6 43.7 396S161.4 133.7 306 133.7 568.3 251.4 568.3 396 450.6 658.3 306 658.3zm0-408c-12.1 0-21.9 9.8-21.9 21.9v247.7c0 12.1 9.8 21.9 21.9 21.9s21.9-9.8 21.9-21.9V272.1c0-12-9.8-21.8-21.9-21.8z"/><path d="M429.9 374.1H182.1c-12.1 0-21.9 9.8-21.9 21.9s9.8 21.9 21.9 21.9h247.7c12.1 0 21.9-9.8 21.9-21.9s-9.8-21.9-21.8-21.9z"/></svg>
+                            Подать объявление
+                        </a>
+                        <a href="#" class="btn-sec header__login header__lk-btn">
+                            <span href="#" class="messages">
+                                <svg xmlns="http://www.w3.org/2000/svg" height='14' width='10'  viewBox="0 162.9 612 466.2"  xmlns:v="https://vecta.io/nano"><path d="M558.2 162.9H53.8c-8.3 0-16 2-23 5.4l274.1 274.1 61.4-59 215-215c-7.1-3.4-14.8-5.5-23.1-5.5zm48.4 30.8L404.3 396l202.3 202.3c3.4-7 5.4-14.8 5.4-23V216.7c0-8.3-2-16-5.4-23zm-601.2 0c-3.4 7-5.4 14.8-5.4 23v358.6c0 8.3 2 16 5.4 23L207.7 396 5.4 193.7zm373.5 227.7l-61.4 59c-3.5 3.5-8.1 5.3-12.7 5.3s-9.2-1.8-12.7-5.3l-59-59L30.7 623.7c7 3.4 14.8 5.4 23.1 5.4h504.4c8.3 0 16-2 23-5.4L378.9 421.4z"/></svg>
+                                <span>
+                                    0
+                                </span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height='19' width='19' viewBox="0 0 512 512"  fill="#ff6518"><path d="M256 512c-60.6 0-119.4-21.6-165.5-60.7-10.8-9.2-21-19.4-30.2-30.3C21.4 374.9 0 316.3 0 256c0-68.4 26.6-132.7 75-181S187.6 0 256 0s132.7 26.6 181 75 75 112.6 75 181c0 60.3-21.4 118.9-60.3 165-9.2 10.9-19.4 21.1-30.2 30.3C375.4 490.4 316.6 512 256 512h0zm0-480C132.5 32 32 132.5 32 256c0 52.8 18.7 104.1 52.7 144.4 8.1 9.5 17 18.5 26.5 26.5C151.5 461.1 203 480 256 480s104.5-18.9 144.8-53.1a236.83 236.83 0 0 0 26.5-26.5c34-40.3 52.7-91.5 52.7-144.4 0-123.5-100.5-224-224-224h0zm0 224c-52.9 0-96-43.1-96-96s43.1-96 96-96 96 43.1 96 96-43.1 96-96 96zm0-160c-35.3 0-64 28.7-64 64s28.7 64 64 64 64-28.7 64-64-28.7-64-64-64z"/><path d="M411.2 455.1c-1.3 0-2.6-.2-3.9-.5-8.6-2.2-13.8-10.8-11.6-19.4 2.9-11.4 4.3-23.3 4.3-35.2 0-78.3-63.6-142.9-141.9-144h-4.2C175.6 257.1 112 321.7 112 400c0 11.9 1.5 23.7 4.3 35.2 2.2 8.6-3.1 17.3-11.6 19.4s-17.3-3.1-19.4-11.6a177.06 177.06 0 0 1-5.3-43c0-46.6 18-90.5 50.7-123.6S207 224.7 253.5 224h5c46.5.6 90.1 19.2 122.8 52.4C414 309.5 432 353.4 432 400a177.67 177.67 0 0 1-5.3 43c-1.8 7.2-8.3 12.1-15.5 12.1z"/></svg>
+                            Личный кабинет
+                            <span class="count-izbr">
+                                <svg xmlns="http://www.w3.org/2000/svg" height='13' width='13'  viewBox="0 206.1 612 585.9"  xmlns:v="https://vecta.io/nano"><path d="M610.4 427.7c-4.1-12.3-15-21.2-28-22.4l-176.7-15.9-69.8-163.5c-5.1-12-16.9-19.8-29.9-19.8-13.1 0-24.8 7.8-29.9 19.8l-69.8 163.5-176.7 15.9c-12.9 1.2-24 9.9-28 22.4-4.1 12.3-.4 26 9.5 34.6l133.5 117.1-39.3 173.4c-2.9 12.7 2 26 12.7 33.5 5.6 4.2 12.3 6.2 19 6.2 5.7 0 11.5-1.6 16.6-4.7L306 696.7l152.3 91.1c11.1 6.7 25.3 6.1 35.8-1.6s15.6-20.8 12.7-33.5l-39.4-173.4L601 462.2c9.7-8.5 13.4-22 9.4-34.5z"/></svg>
+                                <span>
+                                    0
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="menu_btn" data-burger>
+                        <div class="bar" data-id="bar"></div>
+                        <div class="bar" data-id="bar"></div>
+                        <div class="bar" data-id="bar"></div>
+                    </div>
+                </div>
+                <div class="header__wrap">
+                    <nav class="header__nav" data-nav>
+                        <ul>
+                            <li class="menu-item">
+                                <a href="index.html">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Соискателям
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Работодателям
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Партнеры
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>  
+                    
+                </div>
+            </div>
+        </header>
+        
+        <div class="container">
+            <div class="lk__breadcrumbs">
+                <div class="breadcrumbs">
+                    <span>
+                        <a class="breadcrumbs__link" href="lk.html"> 
+                            <span>
+                                Профиль    
+                            </span>
+                        </a>
+                    </span>
+                    <span class="breadcrumbs__separator"> 
+                        >
+                    </span>
+                    <span class="breadcrumbs__current">
+                        Мои объявления
+                    </span>
+                </div>
+            </div>
+        </div>
+        <section class="soisk">
+            <div class="container">
+                <div class="news__wrap">
+                    <div class="news__l">
+                        <div class="vac__wrap">
+                            <div class="vac__item" data-vac>
+                                <div class="vac__top">
+                                    <div class="vac__top-l">
+                                        <div class="vac__tit title-s">
+                                            Сервисный инженер
+                                        </div>
+                                        <div class="vac__sum">
+                                            60 000 — 120 000 руб.
+                                        </div>
+                                    </div>
+                                    <div class="vac__city" data-city="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="17" viewBox="84.4 90 443.3 612" xmlns:v="https://vecta.io/nano"><path fill="#a2a2a2" d="M306 90C183.8 90 84.4 189.4 84.4 311.6c0 151.7 198.3 374.3 206.8 383.7 7.9 8.8 21.8 8.8 29.7 0 8.4-9.4 206.8-232.1 206.8-383.7C527.6 189.4 428.2 90 306 90zm0 333.2c-61.5 0-111.5-50-111.5-111.5s50-111.5 111.5-111.5 111.5 50 111.5 111.5-50 111.5-111.5 111.5z"></path></svg>
+                                        <span>
+                                            Москва
+                                        </span>
+                                    </div>
+                                    <div class="vac__izbr">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 511 490.7" xmlns:v="https://vecta.io/nano"><path fill="#d5c6b7" d="M509.7 186c-3.4-10.3-12.5-17.7-23.4-18.7L338.8 154 280.5 17.5c-4.3-10-14.1-16.5-25-16.5s-20.7 6.5-25 16.5L172.2 154 24.7 167.3c-10.8 1-20 8.3-23.4 18.7-3.4 10.3-.3 21.7 7.9 28.9l111.5 97.8-32.8 144.7c-2.4 10.6 1.7 21.7 10.6 28 4.7 3.5 10.3 5.2 15.9 5.2 4.8 0 9.6-1.3 13.9-3.9l127.2-76.1 127.2 76.1c9.3 5.6 21.1 5.1 29.9-1.3s13-17.4 10.6-28l-32.9-144.8 111.5-97.8c8.1-7.1 11.2-18.4 7.9-28.8z"></path></svg>
+                                    </div>
+                                </div>
+                                <p>
+                                    Монтаж и пуско-наладка оборудования ДМГ МОРИ на территории заказчика. Плановое обслуживание, диагностика и ремонт оборудования ДМГ МОРИ на территории заказчика. Технические консультации и помощь в устранении неисправностей по
+                                </p>
+                                <div class="vac__comp" data-comp="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512" xmlns:v="https://vecta.io/nano"><path fill="#a2a2a2" d="M256 0C114.5 0 0 114.5 0 256s114.5 256 256 256 256-114.5 256-256S397.5 0 256 0zm-60.9 364l-94.8-94.8c-14.1-14.1-14.1-37.1 0-51.3 14.2-14.2 37.1-14.2 51.3 0l57.2 57.2c7.1 7.1 18.7 7.1 25.7-.1l125.7-127.5c14.1-14.3 37.2-14.4 51.5-.2 14 14 14.1 36.9.2 51.1L249.5 364c-15 15-39.4 15-54.4 0h0z"></path></svg>
+                                    <span>
+                                        Общество с ограниченной ответственностью «Сервис Плюс»
+                                    </span>
+                                </div>
+                                <div class="vac__bot">
+                                    <a href="#" class="vac__btn">
+                                        Откликнуться
+                                    </a>
+                                    <span class="news-info__date">
+                                        28 июля 2020
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="vac__item" data-vac>
+                                <div class="vac__top">
+                                    <div class="vac__top-l">
+                                        <div class="vac__tit title-s">
+                                            Оператор по продаже банковских продуктов
+                                        </div>
+                                        <div class="vac__sum">
+                                            от 30 000 руб.
+                                        </div>
+                                    </div>
+                                    <div class="vac__city" data-city="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="17" viewBox="84.4 90 443.3 612" xmlns:v="https://vecta.io/nano"><path fill="#a2a2a2" d="M306 90C183.8 90 84.4 189.4 84.4 311.6c0 151.7 198.3 374.3 206.8 383.7 7.9 8.8 21.8 8.8 29.7 0 8.4-9.4 206.8-232.1 206.8-383.7C527.6 189.4 428.2 90 306 90zm0 333.2c-61.5 0-111.5-50-111.5-111.5s50-111.5 111.5-111.5 111.5 50 111.5 111.5-50 111.5-111.5 111.5z"></path></svg>
+                                        <span>
+                                            Удаленная работа
+                                        </span>
+                                    </div>
+                                    <div class="vac__izbr active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 511 490.7" xmlns:v="https://vecta.io/nano"><path fill="#d5c6b7" d="M509.7 186c-3.4-10.3-12.5-17.7-23.4-18.7L338.8 154 280.5 17.5c-4.3-10-14.1-16.5-25-16.5s-20.7 6.5-25 16.5L172.2 154 24.7 167.3c-10.8 1-20 8.3-23.4 18.7-3.4 10.3-.3 21.7 7.9 28.9l111.5 97.8-32.8 144.7c-2.4 10.6 1.7 21.7 10.6 28 4.7 3.5 10.3 5.2 15.9 5.2 4.8 0 9.6-1.3 13.9-3.9l127.2-76.1 127.2 76.1c9.3 5.6 21.1 5.1 29.9-1.3s13-17.4 10.6-28l-32.9-144.8 111.5-97.8c8.1-7.1 11.2-18.4 7.9-28.8z"></path></svg>
+                                    </div>
+                                </div>
+                                <p>
+                                    Тинькофф – первый в России онлайн банк и абсолютный лидер на рынке финансовых технологий. У нас интересно работать, ведь мы решаем все околофинансовые вопросы наших клиентов - от кредитов на открытие бизнеса до покупки билетов в
+                                </p>
+                                <div class="vac__comp" data-comp="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512" xmlns:v="https://vecta.io/nano"><path fill="#a2a2a2" d="M256 0C114.5 0 0 114.5 0 256s114.5 256 256 256 256-114.5 256-256S397.5 0 256 0zm-60.9 364l-94.8-94.8c-14.1-14.1-14.1-37.1 0-51.3 14.2-14.2 37.1-14.2 51.3 0l57.2 57.2c7.1 7.1 18.7 7.1 25.7-.1l125.7-127.5c14.1-14.3 37.2-14.4 51.5-.2 14 14 14.1 36.9.2 51.1L249.5 364c-15 15-39.4 15-54.4 0h0z"></path></svg>
+                                    <span>
+                                        Тинькофф
+                                    </span>
+                                </div>
+                                <div class="vac__bot">
+                                    <a href="#" class="vac__btn">
+                                        Откликнуться
+                                    </a>
+                                    <span class="news-info__date">
+                                        28 июля 2020
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="vac__item" data-vac>
+                                <div class="vac__top">
+                                    <div class="vac__top-l">
+                                        <div class="vac__tit title-s">
+                                            Оператор по продаже банковских продуктов
+                                        </div>
+                                        <div class="vac__sum">
+                                            от 30 000 руб.
+                                        </div>
+                                    </div>
+                                    <div class="vac__city" data-city="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="17" viewBox="84.4 90 443.3 612" xmlns:v="https://vecta.io/nano"><path fill="#a2a2a2" d="M306 90C183.8 90 84.4 189.4 84.4 311.6c0 151.7 198.3 374.3 206.8 383.7 7.9 8.8 21.8 8.8 29.7 0 8.4-9.4 206.8-232.1 206.8-383.7C527.6 189.4 428.2 90 306 90zm0 333.2c-61.5 0-111.5-50-111.5-111.5s50-111.5 111.5-111.5 111.5 50 111.5 111.5-50 111.5-111.5 111.5z"></path></svg>
+                                        <span>
+                                            Удаленная работа
+                                        </span>
+                                    </div>
+                                    <div class="vac__izbr active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 511 490.7" xmlns:v="https://vecta.io/nano"><path fill="#d5c6b7" d="M509.7 186c-3.4-10.3-12.5-17.7-23.4-18.7L338.8 154 280.5 17.5c-4.3-10-14.1-16.5-25-16.5s-20.7 6.5-25 16.5L172.2 154 24.7 167.3c-10.8 1-20 8.3-23.4 18.7-3.4 10.3-.3 21.7 7.9 28.9l111.5 97.8-32.8 144.7c-2.4 10.6 1.7 21.7 10.6 28 4.7 3.5 10.3 5.2 15.9 5.2 4.8 0 9.6-1.3 13.9-3.9l127.2-76.1 127.2 76.1c9.3 5.6 21.1 5.1 29.9-1.3s13-17.4 10.6-28l-32.9-144.8 111.5-97.8c8.1-7.1 11.2-18.4 7.9-28.8z"></path></svg>
+                                    </div>
+                                </div>
+                                <p>
+                                    Тинькофф – первый в России онлайн банк и абсолютный лидер на рынке финансовых технологий. У нас интересно работать, ведь мы решаем все околофинансовые вопросы наших клиентов - от кредитов на открытие бизнеса до покупки билетов в
+                                </p>
+                                <div class="vac__comp" data-comp="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512" xmlns:v="https://vecta.io/nano"><path fill="#a2a2a2" d="M256 0C114.5 0 0 114.5 0 256s114.5 256 256 256 256-114.5 256-256S397.5 0 256 0zm-60.9 364l-94.8-94.8c-14.1-14.1-14.1-37.1 0-51.3 14.2-14.2 37.1-14.2 51.3 0l57.2 57.2c7.1 7.1 18.7 7.1 25.7-.1l125.7-127.5c14.1-14.3 37.2-14.4 51.5-.2 14 14 14.1 36.9.2 51.1L249.5 364c-15 15-39.4 15-54.4 0h0z"></path></svg>
+                                    <span>
+                                        Тинькофф
+                                    </span>
+                                </div>
+                                <div class="vac__bot">
+                                    <a href="#" class="vac__btn">
+                                        Откликнуться
+                                    </a>
+                                    <span class="news-info__date">
+                                        28 июля 2020
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__r">
+                        <div class="partn">
+                            <div class="partn__tit">
+                                Наши партнеры
+                            </div>
+                            <div class="partn__img">
+                                <span>
+                                    Баннер рекламный партнеров сервиса
+                                </span>
+                            </div>
+                            <div class="partn__img">
+                                <span>
+                                    Баннер рекламный партнеров сервиса
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <a href="index.html" class="logo footer__logo">
+                        <img src="img/logo-f.png" alt="Logo">
+                    </a>
+                    <div class="footer__menu">
+                        <ul>
+                            <li class="menu-item">
+                                <a href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Соискателям   
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Работодателям
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    Партнеры
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__cont">
+                        <div class="header__cont-item footer__cont-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" height='29' width='29' viewBox="0 90 612 612"><path fill="#ff8045" d="M306 90C137 90 0 227 0 396s137 306 306 306 306-137 306-306S475 90 306 90zm137.9 170l-138 109.1L163.4 260h280.5zm14.2 272H149.2V306.1l142.4 108c3.8 2.9 9.5 4.4 14 4.4 4.7 0 8.7-1.5 12.6-4.6l139.9-111.3V532z"/></svg>
+                            <div class="header__cont-wrap">
+                                почта для связи
+                                <a href="mailto:Student@opora.su" class="header__cont-link">
+                                    Student@opora.su
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__cont-item footer__cont-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" height='28' width='28' viewBox="0 90 612 612"><path fill="#ff8045" d="M522.3 179.6c-119.5-119.5-313.2-119.5-432.7.1s-119.5 313.3.1 432.7 313.3 119.5 432.7-.1c57.4-57.4 89.6-135.2 89.6-216.4 0-81.1-32.3-158.9-89.7-216.3zm-58.9 336.7h0l-15.5 15.3c-20.1 20.3-49.3 28.7-77 22-28-7.5-54.5-19.4-78.7-35.3-22.5-14.4-43.3-31.2-62.1-50.1-17.3-17.2-32.9-36-46.4-56.3-14.8-21.8-26.6-45.6-34.9-70.6-9.5-29.4-1.6-61.7 20.4-83.3l18.2-18.2c5-5.1 13.3-5.1 18.3 0l57.3 57.3c5.1 5 5.1 13.3 0 18.3l-33.7 33.7c-9.7 9.6-10.9 24.7-2.9 35.7 12.2 16.7 25.6 32.4 40.3 47 16.3 16.4 34.1 31.3 53 44.6 11 7.6 25.8 6.4 35.3-3.1l32.5-33c5-5.1 13.3-5.1 18.3 0l57.4 57.5c5.3 5.2 5.3 13.4.2 18.5z"/></svg>
+                            <div class="header__cont-wrap">
+                                телефон
+                                <a href="tel:88005556635" class="header__cont-link">
+                                    8 (800) 555 66 35
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-r">
+                        <a href="#" class="btn header__obj">
+                            <svg xmlns="http://www.w3.org/2000/svg" height='20' width='20' viewBox="0 90 612 612"  fill="#fff"><path d="M306 90C137.3 90 0 227.3 0 396s137.3 306 306 306 306-137.3 306-306S474.7 90 306 90zm0 568.3C161.4 658.3 43.7 540.6 43.7 396S161.4 133.7 306 133.7 568.3 251.4 568.3 396 450.6 658.3 306 658.3zm0-408c-12.1 0-21.9 9.8-21.9 21.9v247.7c0 12.1 9.8 21.9 21.9 21.9s21.9-9.8 21.9-21.9V272.1c0-12-9.8-21.8-21.9-21.8z"/><path d="M429.9 374.1H182.1c-12.1 0-21.9 9.8-21.9 21.9s9.8 21.9 21.9 21.9h247.7c12.1 0 21.9-9.8 21.9-21.9s-9.8-21.9-21.8-21.9z"/></svg>
+                            Подать объявление
+                        </a>
+                        <div class="footer__soc">
+                            <a href="#" class="footer__soc-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" height='30' width='30' viewBox="0 0 112.196 112.196"  xmlns:v="https://vecta.io/nano"><circle cx="56.098" cy="56.098" r="56.098" fill="#4d76a1"/><path d="M53.979 80.702h4.403s1.33-.146 2.009-.878c.625-.672.605-1.934.605-1.934s-.086-5.908 2.656-6.778c2.703-.857 6.174 5.71 9.853 8.235 2.782 1.911 4.896 1.492 4.896 1.492l9.837-.137s5.146-.317 2.706-4.363c-.2-.331-1.421-2.993-7.314-8.463-6.168-5.725-5.342-4.799 2.088-14.702 4.525-6.031 6.334-9.713 5.769-11.29-.539-1.502-3.867-1.105-3.867-1.105l-11.076.069s-.821-.112-1.43.252c-.595.357-.978 1.189-.978 1.189s-1.753 4.667-4.091 8.636c-4.932 8.375-6.904 8.817-7.71 8.297-1.875-1.212-1.407-4.869-1.407-7.467 0-8.116 1.231-11.5-2.397-12.376-1.204-.291-2.09-.483-5.169-.514-3.952-.041-7.297.012-9.191.94-1.26.617-2.232 1.992-1.64 2.071.732.098 2.39.447 3.269 1.644 1.135 1.544 1.095 5.012 1.095 5.012s.652 9.554-1.523 10.741c-1.493.814-3.541-.848-7.938-8.446-2.253-3.892-3.954-8.194-3.954-8.194s-.328-.804-.913-1.234c-.71-.521-1.702-.687-1.702-.687l-10.525.069s-1.58.044-2.16.731c-.516.611-.041 1.875-.041 1.875s8.24 19.278 17.57 28.993c8.555 8.907 18.27 8.322 18.27 8.322h0z" fill-rule="evenodd" fill="#fff"/></svg>
+                            </a>
+                            <a href="#" class="footer__soc-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" height='30' width='30' viewBox="0 90 612 612" enable-background="new 0 90 612 612" xml:space="preserve">
+                                    <g><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="434.5258" y1="268.3039" x2="177.4802" y2="525.3495"><stop  offset="0" style="stop-color:#FFFC00"/><stop  offset="0.5" style="stop-color:#FF18F7"/><stop  offset="1" style="stop-color:#2E77A4"/></linearGradient>
+                                        <path fill="url(#SVGID_1_)" d="M397.2,252.8H214.8c-29.1,0-52.8,23.7-52.8,52.8V488c0,29.1,23.7,52.8,52.8,52.8h182.4
+                                            c29.1,0,52.8-23.7,52.8-52.8V305.6C450,276.5,426.3,252.8,397.2,252.8z M306,491.6c-52.3,0-94.8-42.5-94.8-94.8
+                                            c0-52.3,42.5-94.8,94.8-94.8c52.3,0,94.8,42.5,94.8,94.8C400.8,449.1,358.3,491.6,306,491.6z M403.9,321.6
+                                            c-12.4,0-22.4-10.1-22.4-22.4c0-12.4,10.1-22.4,22.4-22.4c12.4,0,22.4,10.1,22.4,22.4C426.3,311.6,416.2,321.6,403.9,321.6z"/>
+                                        <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="344.6915" y1="358.1353" x2="267.3077" y2="435.519">
+                                            <stop  offset="0" style="stop-color:#FFFC00"/>
+                                            <stop  offset="0.5" style="stop-color:#FF18F7"/>
+                                            <stop  offset="1" style="stop-color:#2E77A4"/>
+                                        </linearGradient>
+                                        <path fill="url(#SVGID_2_)" d="M306,342.1c-30.2,0-54.8,24.6-54.8,54.7c0,30.2,24.6,54.8,54.8,54.8c30.2,0,54.7-24.6,54.7-54.8
+                                            C360.7,366.6,336.2,342.1,306,342.1z"/>
+                                        <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="522.3721" y1="179.6279" x2="89.6278" y2="612.3721">
+                                            <stop  offset="0" style="stop-color:#FFFC00"/>
+                                            <stop  offset="0.5" style="stop-color:#FF18F7"/>
+                                            <stop  offset="1" style="stop-color:#2E77A4"/>
+                                        </linearGradient>
+                                        <path fill="url(#SVGID_3_)" d="M306,90C137,90,0,227,0,396s137,306,306,306s306-137,306-306S475,90,306,90z M490.1,488
+                                            c0,51.2-41.7,92.9-92.9,92.9H214.8c-51.2,0-92.9-41.7-92.9-92.9V305.6c0-51.2,41.7-92.9,92.9-92.9h182.4
+                                            c51.2,0,92.9,41.7,92.9,92.9V488z"/>
+                                    </g>
+                                    </svg>
+                            <a href="#" class="footer__soc-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" height='30' width='30' viewBox="0 0 112.196 112.196"  xmlns:v="https://vecta.io/nano"><circle cx="56.098" cy="56.098" r="56.098" fill="#3b5998"/><path d="M70.201 58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34c0-5.964 2.833-15.303 15.301-15.303l11.234.047v12.51h-8.151c-1.337 0-3.217.668-3.217 3.513v7.585h11.334l-1.325 12.876z" fill="#fff"/></svg>
+                            </a>
+                            <span>
+                                Социальные сети
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bot">
+                    <span>
+                        ©  «Опора студента», 2020
+                    </span>
+                    <p>
+                        Продолжая пользование данным сайтом, я выражаю свое согласие на обработку моих персональных данных с использованием интернет-сервисов "Google Analytics" и "Яндекс Метрика". С Политикой в отношении обработки персональных данных и сведениями о реализуемых требованиях к защите персональных данных" ознакомлен.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/jqui/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jqui/jquery-ui.min.js"></script>
+    <script src="js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/slick/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
