@@ -51,6 +51,13 @@ jQuery(document).ready(function($) {
 //           $(this).find('p').slideToggle(300);
 //       })
 //   }
+
+    //upload
+    if ($('[data-att]').length > 0) {
+      $('[data-att]').on('change', function() {
+        $('[data-fname]').text(this.files[0].name);
+      });
+    }
   // burger
   $('[data-burger]').click(function() {
       $('html').toggleClass("open");
