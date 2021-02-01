@@ -264,14 +264,14 @@
                                                 <span>
                                                     Сфера деятельности:
                                                 </span>
-                                                <select name="language" data-obl>
+                                                <select name="language" class="select" data-obl>
                                                     <option value="Выберите Ваше сферу">Выберите Ваше сферу</option>
                                                     <option value="Выберите Ваше сферу">Выберите Ваше сферу</option>
                                                     <option value="Выберите Ваше сферу">Выберите Ваше сферу</option>
                                                     <option value="Выберите Ваше сферу">Выберите Ваше сферу</option>
                                                 </select>
                                                 <div class="settings__input-wrap">
-                                                    <input type="radio" name="sphere" id="sphere1">
+                                                    <input type="checkbox" name="sphere" id="sphere1">
                                                     <label for="sphere1" class="settings__rad-lab settings__chbox-lab">
                                                         Все сферы
                                                     </label>
@@ -341,7 +341,7 @@
                                                     </label>
                                                 </div>
                                                 <div class="settings__lang-wrap">
-                                                    <select name="language" data-lang>
+                                                    <select name="language" class="select" data-lang>
                                                         <option value="Английский">Английский</option>
                                                         <option value="Немецкий">Немецкий</option>
                                                         <option value="Французский">Французский</option>
@@ -365,6 +365,82 @@
                                             <div class="settings__redact">
                                                 <img src="img/demo/window.png" alt="">
                                             </div>
+                                            <div class="settings__ocen">
+                                                <div class="settings__ocen-wrap">
+                                                    <span>
+                                                        Год
+                                                        окончаний
+                                                    </span>
+                                                    <select name="year" class="select select-sm">
+                                                        <option value="2020">2020</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2017">2017</option>
+                                                    </select>
+                                                </div>
+                                                <div class="settings__ocen-wrap">
+                                                    <span>
+                                                        Средний балл в дипломе
+                                                    </span>
+                                                    <select name="dipl" class="select select-sm">
+                                                        <option value="5.0">5.0</option>
+                                                        <option value="4.0">4.0</option>
+                                                        <option value="3.0">3.0</option>
+                                                    </select>
+                                                </div>
+                                                <div class="settings__ocen-wrap">
+                                                    <span>
+                                                        Оценка по практике
+                                                    </span>
+                                                    <select name="pract" class="select select-sm">
+                                                        <option value="5.0">5.0</option>
+                                                        <option value="4.0">4.0</option>
+                                                        <option value="3.0">3.0</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="settings__info-item settings__info-educ">
+                                                <span>
+                                                    Образование
+                                                </span>
+                                                <div class="settings__help">
+                                                    <div class="settings__input-wrap">
+                                                        <input type="radio" name="educ" id="educ1">
+                                                        <label for="educ1" class="settings__rad-lab">
+                                                            Высшее
+                                                        </label>
+                                                    </div>
+                                                    <div class="settings__input-wrap">
+                                                        <input type="radio" name="educ" id="educ2">
+                                                        <label for="educ2" class="settings__rad-lab">
+                                                            Среднее специальное
+                                                        </label>
+                                                    </div>
+                                                    <div class="settings__input-wrap">
+                                                        <input type="radio" name="educ" id="educ3">
+                                                        <label for="educ3" class="settings__rad-lab">
+                                                            Нет
+                                                        </label>
+                                                    </div>
+                                                    <div class="settings__help-wrap">
+                                                        <div class="settings__input-wrap">
+                                                            <input type="radio" name="educ" id="educ4">
+                                                            <label for="educ4" class="settings__rad-lab">
+                                                                Получаю, учусь на
+                                                                <input type="text" name="kurs" class="news-info__form-inp kurs__inp">
+                                                                курсе
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="settings__submit">
+                                            <div class="settings__submit-img">
+                                                <img src="img/demo/captcha.png" alt="">
+                                            </div>
+                                            <input type="text" name="captcha" class="news-info__form-inp captcha" placeholder="Код с картинки">
+                                            <input type="submit" value="Сохранить" class='btn captcha__btn'>
                                         </div>
                                     </form>                            
                                 </div>
