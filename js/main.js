@@ -12,10 +12,7 @@ jQuery(document).ready(function($) {
     
     }
  
-  //tabs
-//   $('[data-can]').on('click', function() {
-//       $(this).addClass('active').siblings().removeClass('active').closest('.can__wrap').find('ul.can__list').removeClass('active').eq($(this).index()).addClass('active');
-//   });
+
  
   //slider
   if ($(window).width() < 994) {
@@ -44,18 +41,17 @@ jQuery(document).ready(function($) {
         slidesToShow: 3
     });
 };
-  // faq
-//   if (jQuery('[data-faq]').length > 0) {
-//       $('[data-faq]').click(function() {
-//           $(this).find('.faq__title').toggleClass('open');
-//           $(this).find('p').slideToggle(300);
-//       })
-//   }
+
 
     //upload
     if ($('[data-att]').length > 0) {
       $('[data-att]').on('change', function() {
         $('[data-fname]').text(this.files[0].name);
+      });
+    }
+    if ($('[data-upload]').length > 0) {
+      $('[data-upload]').on('change', function() {
+        $('[data-labupl]').text(this.files[0].name);
       });
     }
   // burger
