@@ -1971,6 +1971,7 @@ input {
 }
 .news__r {
 	width: 23%;
+	min-width: 262px;
 }
 .news .title-l {
 	margin-right: 30px;
@@ -2041,6 +2042,7 @@ input {
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
+	width: 100%;
 	margin: 19px auto 0;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
