@@ -1337,6 +1337,9 @@ input {
 .vac__city svg {
 	margin-right: 5px;
 }
+.vac__city span {
+    width: 90%;
+}
 .vac__item p {
 	color: #000;
 	line-height: 1.37em;
@@ -3803,6 +3806,11 @@ input {
     display: -moz-box;
     display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: -5px 0;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -3907,7 +3915,7 @@ input {
 .podat__wrap .settings__inp-wrap:not(:last-child) label {
 	position: absolute;
     top: 26px;
-    z-index: 3;
+    z-index: 1;
 	left: 33px;
 	font-size: 15px;
 	font-weight: 500;
@@ -4235,12 +4243,14 @@ input {
 		width: 90%;
 	}
 	.message__chat-top {
+		margin-bottom: 6px;
+	}
+	.message__help {
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -moz-box;
 		display: -ms-flexbox;
 		display: flex;
-		margin-bottom: 6px;
 		-webkit-box-align: center;
 		-webkit-align-items: center;
 		   -moz-box-align: center;
@@ -4301,6 +4311,7 @@ input {
 	.message__chat {
 		max-height: 346px;
 		overflow-y: scroll;
+		margin-bottom: 15px;
 	}
 	.message__chat-mess {
 		max-width: 85%;

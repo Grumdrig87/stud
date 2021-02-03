@@ -7,6 +7,9 @@ jQuery(document).ready(function($) {
     $('[data-vac] p').after('<div class="vac-mob" data-vacmob></div>');
     $('[data-vac]').each(function(){
       $(this).find('[data-city]').appendTo($(this).find('[data-vacmob]'));
+      if (jQuery('[data-nidate]').length > 0) {
+        $(this).find('[data-nidate]').appendTo($(this).find('[data-vacmob]'));
+      }
       $(this).find('[data-comp]').appendTo($(this).find('[data-vacmob]'));
     })
     
@@ -74,6 +77,10 @@ if ($(window).width() < 769) {
   $('[data-sortmob]').after('<div class="filt-menu" data-filmen><div class="close-btn" data-close>x</div></div>');
   $('[data-sort]').appendTo('[data-filmen]');
   $('[data-range]').appendTo('[data-filmen]');
+  $('[data-messname]').before('<div class="chat-foto" data-fotomob></div>');
+  $('[data-mchati]').each(function(){
+    $(this).find('[data-messimg]').appendTo($(this).find('[data-fotomob]'));
+  })
   if (jQuery('[data-filters]').length > 0) {
     $('[data-filters]').click(function(){
       $('[data-filmen]').addClass('open');
@@ -85,8 +92,10 @@ if ($(window).width() < 769) {
     })
   }
 }
-
-
+if ($(window).width() < 577) {
+  $('.prof__wrapr input[name="city"]').attr('placeholder','Ваше местопроживание')
+  $('.podat__wrap .settings__inp-wrap:first-child label').html('Заголовок <i>*</i>');
+}
     //upload
     if ($('[data-att]').length > 0) {
       $('[data-att]').on('change', function() {
